@@ -1,50 +1,6 @@
 //index.js
 //获取应用实例
-var app = getApp()
-var hotapp = require('../../utils/hotapp.js')
 
- // 查询事件列表的Base URL 
-const API_URL_L = "http://v.juhe.cn/certificates/typeList.php" 
- // 申请API获得的KEY 
-const API_KEY = "569c0cfd9ed9eac2bc5af9ad0f539c92" 
-
- 
-Page({ 
-
-    data:{
-		  yyyyyy:'你好' ,
-	
-			
-	},
-   
-   //事件处理函数 
-   change_yyyyy:function(e){
-		this.setData({
-		    yyyyyy:'333333'
-		});
-   },
-   
-   
-	setBarTitle:function(){
-		wx.setNagavitionBarTile({
-		  title: '跳转测试'
-		}) 
-	},
-	
-	keepT:function(){
-		wx.navigateTo({
-			url:'../second/second',
-			success:function(res){
-				console.log(res)
-			},
-			fail:function(err){
-				console.log(err)
-			}
-			
-		})
-		
-	},
-	
 	toGet:function(data){ 
            
 		    hotapp.get('123',function(res){
