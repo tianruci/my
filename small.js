@@ -1,29 +1,6 @@
 //index.js
 //获取应用实例
-
-	toGet:function(data){ 
-           
-		    hotapp.get('123',function(res){
-		      console.log(res['data']['value']) 
-				 
-			}) 
-		 
-		 wx.request({
-			url: API_URL_L,
-			data:{
-				appkey: 'hotapp56881400',
-				key: "123",
-			},
-			header: {
-				'content-Type': 'application/json'
-			},
-			success: function(res){
-				console.log(res)
-			}
-		})  
-
-	},
-	
+//哈哈哈提交啦！
 	
 	pay:function(){
 		wx.requestPayment({  
